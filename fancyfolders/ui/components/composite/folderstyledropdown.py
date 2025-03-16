@@ -31,4 +31,4 @@ class FolderStyleDropdown(QComboBox):
         return FolderStyle(self.currentIndex())
 
     def reset(self) -> None:
-        self.setCurrentIndex(FolderStyle.big_sur_light.value)
+        self.setCurrentIndex(FolderStyle.sequoia_light.value)

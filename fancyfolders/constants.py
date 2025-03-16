@@ -42,8 +42,8 @@ class IconGenerationMethod(Enum):
 
 
 class FolderStyle(Enum):
-    big_sur_light = 0
-    big_sur_dark = 1
+    sequoia_light = 0
+    sequoia_dark = 1
     catalina = 2
 
     def filename(self):
@@ -52,8 +52,8 @@ class FolderStyle(Enum):
         :return: Filename
         """
         return {
-            FolderStyle.big_sur_light: "big_sur_light.png",
-            FolderStyle.big_sur_dark: "big_sur_dark.png",
+            FolderStyle.sequoia_light: "sequoia_light.png",
+            FolderStyle.sequoia_dark: "sequoia_dark.png",
             FolderStyle.catalina: "catalina.png"
         }[self]
 
@@ -63,8 +63,8 @@ class FolderStyle(Enum):
         :return: Name
         """
         return {
-            FolderStyle.big_sur_light: "macOS Big Sur - Light mode",
-            FolderStyle.big_sur_dark: "macOS Big Sur - Dark mode",
+            FolderStyle.sequoia_light: "macOS Big Sur - Light mode",
+            FolderStyle.sequoia_dark: "macOS Big Sur - Dark mode",
             FolderStyle.catalina: "macOS Catalina",
         }[self]
 
@@ -74,8 +74,8 @@ class FolderStyle(Enum):
         :return: Size in pixels
         """
         return {
-            FolderStyle.big_sur_light: 1024,
-            FolderStyle.big_sur_dark: 1024,
+            FolderStyle.sequoia_light: 1024,
+            FolderStyle.sequoia_dark: 1024,
             FolderStyle.catalina: 1024,
         }[self]
 
@@ -86,8 +86,8 @@ class FolderStyle(Enum):
         :return: Coordinate percentages (x1, y1, x2, y2)
         """
         return {
-            FolderStyle.big_sur_light: (0.086, 0.29, 0.914, 0.777),
-            FolderStyle.big_sur_dark: (0.086, 0.29, 0.914, 0.777),
+            FolderStyle.sequoia_light: (0.086, 0.29, 0.914, 0.777),
+            FolderStyle.sequoia_dark: (0.086, 0.29, 0.914, 0.777),
             FolderStyle.catalina: (0.0668, 0.281, 0.9332, 0.770),
         }[self]
 
@@ -98,8 +98,8 @@ class FolderStyle(Enum):
         :return: Coordinate percentages (x1, y1, x2, y2)
         """
         return {
-            FolderStyle.big_sur_light: (0, 0.0888, 1.0, 0.9276),
-            FolderStyle.big_sur_dark: (0, 0.0888, 1.0, 0.9276),
+            FolderStyle.sequoia_light: (0, 0.0888, 1.0, 0.9276),
+            FolderStyle.sequoia_dark: (0, 0.0888, 1.0, 0.9276),
             FolderStyle.catalina: (0, 0.0972, 1.0, 0.896),
         }[self]
 
@@ -109,8 +109,8 @@ class FolderStyle(Enum):
         :return: Colour (r, g, b)
         """
         return {
-            FolderStyle.big_sur_light: (116, 208, 251),
-            FolderStyle.big_sur_dark: (96, 208, 255),
+            FolderStyle.sequoia_light: (116, 208, 251),
+            FolderStyle.sequoia_dark: (96, 208, 255),
             FolderStyle.catalina: (120, 210, 251),
         }[self]
 
@@ -120,8 +120,8 @@ class FolderStyle(Enum):
         :return: Colour (r, g, b)
         """
         return {
-            FolderStyle.big_sur_light: (63, 170, 229),
-            FolderStyle.big_sur_dark: (53, 160, 225),
+            FolderStyle.sequoia_light: (63, 170, 229),
+            FolderStyle.sequoia_dark: (53, 160, 225),
             FolderStyle.catalina: (63, 170, 229),  # TODO set properly
         }[self]
 

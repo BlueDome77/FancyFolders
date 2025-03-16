@@ -13,7 +13,7 @@ from fancyfolders.utilities import (
     hsv_to_rgb_int, internal_resource_path, rgb_int_to_hsv, get_internal_font_location)
 
 
-def generate_folder_icon(folder_style: FolderStyle = FolderStyle.big_sur_light,
+def generate_folder_icon(folder_style: FolderStyle = FolderStyle.sequoia_light,
                          generation_method: IconGenerationMethod = IconGenerationMethod.NONE,
                          icon_scale=1.0, tint_colour: tuple[int, int, int] = None,
                          text: str = None, font_style=SFFont.heavy, image: Image.Image = None,

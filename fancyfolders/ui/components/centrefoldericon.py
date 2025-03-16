@@ -70,7 +70,7 @@ class CentreFolderIcon(QLabel):
         super().__init__()
 
     def set_folder_image(self, image: Image,
-                         folder_style=FolderStyle.big_sur_light) -> None:
+                         folder_style=FolderStyle.sequoia_light) -> None:
         """Sets the image on the display
 
         :param image: PIL Image to display
